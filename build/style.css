@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.content {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 200px;
+  width: 95vw;
+  border-radius: 20;
+  border: solid 2px black;
+}
+
+.image {
+  height: 90%;
+  width: 15%;
+}
