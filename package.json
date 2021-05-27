@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server"
   },
-  "proxy": "http://localhost:5000",
+  "proxy": "https://mighty-harbor-61227.herokuapp.com",
   "author": "",
   "license": "ISC",
   "dependencies": {
