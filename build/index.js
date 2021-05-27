@@ -1,7 +1,9 @@
 const container = document.querySelector(".content");
 
 async function getResponse(params, response) {
-  const request = await fetch(`http://localhost:5000/${params}`);
+  const request = await fetch(
+    `https://mighty-harbor-61227.herokuapp.com/${params}`
+  );
   const json = await request.json();
   response(json);
 }
