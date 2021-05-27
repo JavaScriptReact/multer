@@ -9,6 +9,7 @@ const server = require("http").createServer(app);
 
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, "static")));
+app.use("/", express.static(path.join(__dirname, "static", "uploads")));
 
 const mongodb_uri = require("./config").mongodb_uri;
 mongoose
