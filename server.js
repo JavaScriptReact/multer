@@ -24,7 +24,7 @@ const imageSchema = require("./models/images");
 
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, "build/uploads/");
+    cb(null, "static/uploads/");
   },
   filename: function (req, file, cb) {
     cb(null, `${Date.now()}-${file.originalname}`);
