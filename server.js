@@ -8,7 +8,7 @@ const app = express();
 const server = require("http").createServer(app);
 
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname, "build")));
+app.use(express.static(path.join(__dirname, "static")));
 
 const mongodb_uri = require("./config").mongodb_uri;
 mongoose
@@ -55,7 +55,7 @@ app.get("/images", function (req, res) {
 });
 
 app.get("/", function (req, res) {
-  res.sendFile(path.join(__dirname, "build", "index.html"));
+  res.sendFile(path.join(__dirname, "static", "index.html"));
 });
 
 const PORT = require("./config").PORT;
